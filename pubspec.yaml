@@ -1,0 +1,20 @@
+name: simple_sheets
+description: A wrapper around gsheets to make Google Sheets as easy as a database for beginners.
+version: 0.0.1
+homepage: https://github.com/Karan8686/simple_sheet-
+repository: https://github.com/Karan8686/simple_sheet-
+issue_tracker: https://github.com/Karan8686/simple_sheet-/issues
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  gsheets: ^0.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
