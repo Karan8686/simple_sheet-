@@ -16,7 +16,7 @@ class _SimpleSheetsDemoState extends State<SimpleSheetsDemo> {
   // Controllers
   final _credController = TextEditingController();
   final _idController = TextEditingController();
-  
+
   // State
   SimpleSheets? _sheets;
   List<Map<String, dynamic>> _data = [];
@@ -61,7 +61,7 @@ class _SimpleSheetsDemoState extends State<SimpleSheetsDemo> {
       await _sheets!.add([
         "User ${DateTime.now().second}", // Name
         "${DateTime.now().millisecond}", // ID
-        "Flutter Dev"                    // Role
+        "Flutter Dev" // Role
       ]);
       await _fetchData(); // Refresh UI
     } catch (e) {
@@ -101,7 +101,7 @@ class _SimpleSheetsDemoState extends State<SimpleSheetsDemo> {
               onPressed: _isLoading ? null : _connect,
               child: Text(_isLoading ? "Connecting..." : "Connect to Sheet"),
             ),
-            
+
             const Divider(),
             Text("Status: $_status"),
             const Divider(),

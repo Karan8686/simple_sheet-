@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/main.dart'; 
+import '../lib/main.dart';
 
 void main() {
   testWidgets('SimpleSheetsDemo smoke test', (WidgetTester tester) async {
@@ -9,7 +9,7 @@ void main() {
 
     // Verify that the title is present
     expect(find.text('SimpleSheets Demo'), findsOneWidget);
-    
+
     // Verify inputs exist
     expect(find.byType(TextField), findsNWidgets(2)); // Creds + ID
   });
